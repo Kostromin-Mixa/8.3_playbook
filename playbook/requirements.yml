@@ -1,0 +1,13 @@
+---
+  - src: git@github.com:netology-code/mnt-homeworks-ansible.git
+    scm: git
+    version: "1.0.1"
+    name: java
+  - src: https://github.com/Kostromin-Mixa/elastic-role.git
+    scm: git
+    version: "1.0.0"
+    name: elastic-role
+  - src: https://github.com/Kostromin-Mixa/kibana-role.git
+    scm: git
+    version: "1.0.0"
+    name: kibana-role
