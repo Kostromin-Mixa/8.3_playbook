@@ -1,6 +1,6 @@
 ---
 - name: Install Java
-  hosts: localhost
+  hosts: all
   tasks:
     - name: Set facts for Java 11 vars
       set_fact:
@@ -36,7 +36,7 @@
         dest: /etc/profile.d/jdk.sh
       tags: java
 - name: Install Elasticsearch
-  hosts: localhost
+  hosts: elasticsearch
   tasks:
     - name: Upload tar.gz Elasticsearch from remote URL
       get_url:
@@ -71,7 +71,7 @@
         dest: /etc/profile.d/elk.sh
       tags: elastic
 - name: Install Kibana
-  hosts: localhost
+  hosts: kibana
   tasks:
     - name: Upload tar.gz kibana from remote URL
       get_url:
